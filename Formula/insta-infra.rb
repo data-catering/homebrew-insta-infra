@@ -2,7 +2,7 @@ class InstaInfra < Formula
   desc "Spin up any service straight away on your local laptop"
   homepage "https://github.com/data-catering/insta-infra"
   url "https://github.com/data-catering/insta-infra/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "REPLACE_WITH_ACTUAL_SHA256_AFTER_FIRST_RELEASE"
+  sha256 "24a1928e5a81d936ba3e01e3ebf3ed214eadfc55a81178e56d668a7e1968a687"
   license "MIT"
 
   depends_on "docker" => :recommended
