@@ -10,8 +10,9 @@ class InstaInfra < Formula
   depends_on "go" => :build
 
   def install
+    ENV["GOPATH"] = buildpath
     system "go", "install", "github.com/data-catering/insta-infra/v2/cmd/insta@v2.0.1"
-    bin.install "insta"
+    bin.install buildpath/"bin/insta"
     prefix.install "docker-compose.yaml"
     prefix.install "docker-compose-persist.yaml"
     prefix.install "data"
