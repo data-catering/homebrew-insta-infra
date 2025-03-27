@@ -16,7 +16,8 @@ class InstaInfra < Formula
 
   def install
     system "tar", "-xzf", cached_download, "-C", buildpath
-    bin.install buildpath/"insta"
+    binary_name = "insta-darwin-#{Hardware::CPU.arm? ? "arm64" : "amd64"}"
+    bin.install buildpath/binary_name => "insta"
   end
 
   def caveats
