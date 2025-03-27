@@ -15,7 +15,8 @@ class InstaInfra < Formula
   end
 
   def install
-    bin.install "insta"
+    system "tar", "-xzf", cached_download, "-C", buildpath
+    bin.install buildpath/"insta"
   end
 
   def caveats
