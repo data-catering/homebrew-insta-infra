@@ -2,6 +2,7 @@ class InstaInfra < Formula
   desc "Spin up any service straight away on your local laptop"
   homepage "https://github.com/data-catering/insta-infra"
   license "MIT"
+  version "v2.1.0"
 
   depends_on "docker" => :recommended
   depends_on "docker-compose" => :recommended
