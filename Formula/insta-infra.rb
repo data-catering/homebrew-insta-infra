@@ -8,11 +8,11 @@ class InstaInfra < Formula
   depends_on "docker-compose" => :recommended
 
   if Hardware::CPU.arm?
-    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.0/insta-v2.1.0-darwin-arm64.tar.gz"
-    sha256 "8a0398b72f433534742d6450560cca32ef721b9d9fafc4a8af7901fca2edb122"
+    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.1/insta-v2.1.1-darwin-arm64.tar.gz"
+    sha256 "a8c4718894e5122970a670e5301e50fac9de1e270a57069660ee0ceb87d93212"
   else
-    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.0/insta-v2.1.0-darwin-amd64.tar.gz"
-    sha256 "0a6b3eecc6c83b204f8df67d943040f4b0d49161e5ec7f9c0c55c908407b7ca0"
+    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.1/insta-v2.1.1-darwin-amd64.tar.gz"
+    sha256 "0fade0496df1507264b14a80a5b260c1846d3c4c7565c5d0669afa6c49316891"
   end
 
   def install
