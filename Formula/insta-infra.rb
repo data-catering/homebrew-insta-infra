@@ -2,17 +2,17 @@ class InstaInfra < Formula
   desc "Spin up any service straight away on your local laptop"
   homepage "https://github.com/data-catering/insta-infra"
   license "MIT"
-  version "v2.1.1"
+  version "v2.1.2"
 
   depends_on "docker" => :recommended
   depends_on "docker-compose" => :recommended
 
   if Hardware::CPU.arm?
-    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.1/insta-v2.1.1-darwin-arm64.tar.gz"
-    sha256 "a8c4718894e5122970a670e5301e50fac9de1e270a57069660ee0ceb87d93212"
+    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.2/insta-v2.1.2-darwin-arm64.tar.gz"
+    sha256 "5b87f543e269387a019dde5fb7332b461cc679f213055ff6998f8cea10ed11ac"
   else
-    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.1/insta-v2.1.1-darwin-amd64.tar.gz"
-    sha256 "0fade0496df1507264b14a80a5b260c1846d3c4c7565c5d0669afa6c49316891"
+    url "https://github.com/data-catering/insta-infra/releases/download/v2.1.2/insta-v2.1.2-darwin-amd64.tar.gz"
+    sha256 "0a2e40fbfd5f874e7aea364a29f6328164aa6dd3e9cccaf9faf27c69b1d86214"
   end
 
   def install
